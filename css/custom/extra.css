@@ -1,0 +1,450 @@
+/* Header started here */
+    header.backImage{
+        background-image: url("../../img/header.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    header.backImage .backImage-sub{
+        font-size:1.5rem;
+        line-height: 1.5rem;
+        font-style: italic;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header.backImage .backImage-heading{
+        font-size:3rem;
+        font-weight: 700;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    /* Header finished here */
+    /* Main Navbar started here */
+    #mainNavbar{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #212529;
+    }
+
+    #mainNavbar .navbar-brand{
+        color:red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.063em;
+    }
+    #mainNavbar .navbar-nav .nav-item .nav-link{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.06em;
+        font-size: 1em;
+    }
+    #mainNavbar .navbar-nav .nav-item .nav-link:active,
+    #mainNavbar .navbar-nav .nav-item .nav-link:hover{
+        color:#fa836a;
+    }
+/* Main Navbar finished here */
+/* Services Started Here */
+    .mySection{
+        padding: 5rem 0;
+        background-color: #0af694;
+    }
+    .mySection h2.s-heading{
+        font-size:2rem;
+        margin-top:0;
+        margin-bottom: 1rem;
+    }
+    .mySection h3.s-subheading{
+        font-size:1rem;
+        font-style:italic;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+    }
+/* Services Finished Here */
+/* Portfolio Started Here */
+    #portfolio .p-item{
+        max-width: 26rem;
+        margin-left:auto;
+        margin-right: auto;
+        
+    }
+    #portfolio .p-item .p-link{
+        position:relative;
+        display: block;
+        margin: 0 auto;
+        
+    }
+    #portfolio .p-item .p-link .p-hover{
+        display:flex;
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(21, 22, 23, 0.75);
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity ease-in-out 0.3s;
+        -webkit-transition: opacity ease-in-out 0.3s;
+        -moz-transition: opacity ease-in-out 0.3s;
+        -ms-transition: opacity ease-in-out 0.3s;
+        -o-transition: opacity ease-in-out 0.3s;
+    }
+    #portfolio .p-item .p-link .p-hover .ph-content{
+        font-size: 6.3rem;
+    }
+    #portfolio .p-item .p-link:hover .p-hover{
+        opacity:1;
+    }
+    #portfolio .p-item .p-caption .pc-heading{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    #portfolio .p-item .p-caption  .pc-subheading{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:1.2rem;
+        
+    }
+    /* Portfolio Modals Started Here */
+        .p-modal .modal-dialog{
+            margin: 1rem;
+            max-width: 100vw;
+        }
+        .p-modal .modal-content h2{
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        .p-modal .modal-content .p-intro{
+          
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .p-modal .close-modal{
+            position:absolute;
+            top:1rem;
+            right: 2rem;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        .p-modal .close-modal:hover{
+            opacity: 0.5s;
+        }
+    /* Portfolio Modals Finished Here */
+/* Portfolio Finished Here */
+/* About Us Started Here */
+        .timeLine{
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+        .timeLine:before{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 40px;
+            width: 2px;
+            margin-left: -1px;
+            content: "";
+            background-color: #dadde0;
+        }
+        .timeLine>li{
+            margin-bottom:50px;
+        }
+        .timeLine>li:after,
+        .timeLine>li:before{
+            display:table;
+            content: "";
+        }
+        .timeLine>li .t-panel{
+            padding: 0 20px 0 100px;
+            text-align: left;
+        }
+        .timeLine>li .t-image{
+            position: absolute;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            margin-left: 0;
+            text-align: center;
+            color: white;
+            border: 7px solid #dadde0;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+
+        }
+
+        .timeLine>li .t-image:last-child{
+            background-color: red;
+            border: 7px solid #dadde0;
+
+        }
+        .timeLine>li .t-image h4{
+            font-size: 11px;
+            line-height: 16px;
+            margin-top: 18px;
+        }
+
+        .timeLine .t-heading h4{
+            margin-top: 0;
+            color: inherit;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .timeLine .t-body>ul,
+        .timeLine .t-body>p{
+            margin-bottom: 0;
+        }
+        
+        @media(min-width:768px){
+            .timeLine:before{
+                left: 50%;
+            }
+            .timeLine>li{
+                min-height: 100px;
+                margin-bottom: 100px;
+            }
+            .timeLine>li .t-panel{
+                float: left;
+                width: 40%;
+                padding: 0 20px 20px 30px;
+                text-align: right;
+            }
+            .timeLine>li .t-image{
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                margin-left: -50px;
+            }
+            .timeLine>li .t-image h4{
+                font-size: 13px;
+                line-height: 16px;
+                margin-top: 17px;
+            }
+            .timeLine>li.t-inverted>.t-panel{
+                float: right;
+                padding: 0 30px 20px 20px;
+                text-align: left;
+            }
+        }
+
+        @media(min-width:992px){
+            .timeLine>li {
+                min-height: 150px;
+             
+            }
+            .timeLine>li .t-panel{
+                
+                padding: 0 20px 20px;
+    
+            }
+            .timeLine>li .t-image{
+             
+                width: 150px;
+                height: 150px;
+                margin-left: -75px;
+            }
+            .timeLine>li .t-image h4{
+                font-size: 19px;
+                line-height: 25px;
+                margin-top: 30px;
+            }
+            .timeLine>li.t-inverted>.t-panel{
+                
+                padding: 0 20px 20px;
+               
+            }
+            
+        }
+        @media(min-width:1200px){
+            .timeLine>li {
+                min-height: 170px;
+             
+            }
+            .timeLine>li .t-panel{
+                
+                padding: 0 20px 20px 10px;
+    
+            }
+            .timeLine>li .t-image{
+             
+                width: 175px;
+                height: 175px;
+                margin-left: -89px;
+            }
+            .timeLine>li .t-image h4{
+                font-size: 22px;
+                line-height: 30px;
+                margin-top: 40px;
+            }
+            .timeLine>li.t-inverted>.t-panel{
+                
+                padding: 0 100px 20px 20px;
+               
+            }
+        }
+/* About Us Finished Here */
+/* Team Started Here */
+        .t-member{
+            margin-bottom:3rem;
+        }
+        .t-member img{
+            width: 14rem;
+            height: 14rem;
+            border: 1px solid black;
+        }
+
+        .t-member h4{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .t-member p{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .btn-social{
+            width: 2rem;
+            height: 2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -o-border-radius: 100%;
+            
+        }
+
+        .btn-social:hover{
+            opacity: 50%;
+            background-color: darkred;
+            transition:ease 0.2s;
+        }
+       
+/* Team Finished Here */
+/* Clients started here */
+ .img-logo{
+    height: 3.6rem;
+}
+/* Clients finished here */
+/* Contact Started Here */
+    .btn-contact{
+        width: 15rem;
+    }
+
+    #contact{
+        background-color: #432630;
+        background-image: url(../../img/contact/map.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+    }
+    #contact input{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        
+
+    }
+
+    #contact .form-textarea{
+        height: 91%;
+    }
+    #contact .form-textarea textarea{
+        height: 100%;
+        min-height: 10rem;
+    }
+
+    #contact .form-control:focus{
+        box-shadow: 1px 1px 8px #0af694;
+    }
+/* Contact Finished Here */
+/* Footer Started Here */
+    
+/* Footer Finished Here */
+
+        /* Large ekranının altında */
+        @media(max-width:991.98px) {
+            /* Header md-down started here */
+                header.backImage{
+                    padding-top: 11rem;
+                    padding-bottom: 13rem;
+                }
+                header.backImage .backImage-heading{
+                    font-size:2rem;
+                    line-height: 2rem;
+                }
+                #mainNavbar .navbar-nav .nav-item .nav-link{
+                    color: #212529; 
+                }
+            /* Header md-down finished here */
+            /* Portfolio Modals Started Here */
+                p.modal .modal-content h2{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+                .p-modal .close-modal{
+                    
+                    top:0.5rem;
+                    right: 1rem;
+                    width: 2em;
+                    height: 2em;
+                
+                }
+            /* Portfolio Modals Finished Here */
+
+}
+        /* Large ekranının üstünde */
+        @media(min-width:992px){
+            /* Header md-up started here*/
+                header.backImage{
+                    padding-top: 15rem;
+                    padding-bottom: 15rem;
+                }
+
+                #mainNavbar{
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
+                    border: none;
+                    background-color: transparent;
+                    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+                    -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+                    -moz-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+                    -ms-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+                    -o-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+                    
+                }
+
+                #mainNavbar .navbar-brand{
+                    font-size:1.5rem;
+                    transition:  font-size 0.3s, ease-in-out;
+                    -webkit-transition:  font-size 0.3s, ease-in-out;
+                    -moz-transition:  font-size 0.3s, ease-in-out;
+                    -ms-transition:  font-size 0.3s, ease-in-out;
+                    -o-transition:  font-size 0.3s, ease-in-out;
+            
+                }
+
+                #mainNavbar .navbar-nav .nav-item{
+                    margin-right: 1rem;
+                }
+                #mainNavbar .navbar-nav .nav-item:last-child{
+                    margin-right:0;
+                }
+
+            
+                #mainNavbar.navbar-mobile{
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    background-color: #212529;
+                }
+            /* Header md-up finished here*/
+        }
